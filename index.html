@@ -9,10 +9,11 @@
     </head>
     <style>
         body {
-            background-image: url('src/img/IMG_6275.jpg');
+            background-image: url('src/img/IMG_6275-min.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-position: 0 -30vh;
+            /* background-position: 0 -30vh; */
+            background-position: center;
             background-size: cover;
         }
         #content {
@@ -20,6 +21,15 @@
             left: 50%;
             transform: translate(-50%, -50%);
             position: fixed;
+        }
+        #cover {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(18, 44, 53, 0.5);
+            backdrop-filter: blur(3px);
+            position: absolute;
+            top: 0;
+            left: 0;
         }
         h1 {
             font-family: "Courier New", Courier, Consolas, monospace;
@@ -45,6 +55,7 @@
         }
     </style>
     <body>
+        <div id="cover"></div>
         <div id="content">
             <h1>tortel</h1>
             <p href='https://www.linkedin.com/in/alexsdawkins/'>software & cloud consultancy</p>
