@@ -6,6 +6,8 @@
         <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <style>
         body {
@@ -15,6 +17,7 @@
             /* background-position: 0 -30vh; */
             background-position: center;
             background-size: cover;
+            overflow-y: hidden;
         }
         #content {
             top: 50%;
@@ -33,15 +36,15 @@
         }
         h1 {
             font-family: "Courier New", Courier, Consolas, monospace;
-            font-size: 10vw;
+            font-size: 20vh;
             color: whitesmoke;
             /*text-shadow: 5px 5px rgba(10, 10, 10, 0.8);*/
             margin-bottom: 1vh;
             background: rgb(10, 10, 20);
-        }
+        } 
         a, p {
             font-family: monospace;
-            font-size: 2vw;
+            font-size: 4vh;
             color: cadetblue;
             background: rgb(10, 10, 20);
             text-align: center;
@@ -53,6 +56,14 @@
         p {
             color: whitesmoke;
         }
+        /* @media screen and (max-width: 1000px){
+            h1 {
+                font-size: 20vh;
+            }
+            a, p {
+                font-size: 6vh;
+            }
+        } */
     </style>
     <body>
         <div id="cover"></div>
